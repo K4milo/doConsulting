@@ -37,7 +37,10 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-        <?php get_template_part('includes/navbar-search'); ?>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="tog-search">
+          <?php get_template_part('includes/navbar-search'); ?>
+        </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>

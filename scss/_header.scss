@@ -1,0 +1,36 @@
+//----------- HEADER --------------//
+.navbar {
+	&.navbar-default {
+		position: relative;
+		padding: .5em 0;
+		.container{
+			position: relative;
+			padding-right: 30px;
+			//logo
+			.navbar-brand{
+				text-indent: -99999px;
+				width: 251px;
+				height: 57px;
+				background-image: url(../img/logo.png);
+			}
+			//hide search
+			.tog-search {
+				display: none;
+				position: absolute;
+				top: 50px;
+			}
+			//menu
+			.menu-m-container{
+				float: right;
+			}
+			//search icon
+			i { 
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 15px;
+				display: block;
+			}
+		}
+	} 
+}
