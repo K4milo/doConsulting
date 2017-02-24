@@ -1,0 +1,149 @@
+/*____________________________________
+ 
+ HOME
+ ______________________________________*/
+body {
+	&.page-template-home-tpl{
+		//---- Slider
+		.slide-listing {
+			padding: 0;
+			li {
+				display: block;
+				height: 500px;
+				background-size: cover;
+				background-position: top center;
+				//caption
+				.caption {
+					background-color: rgba(255,255,255,.7);
+					position: relative;
+					width: 450px;
+					top: 30%;
+					left: 50%;
+					transform: translateX(-50%);
+					h5 {
+						font-family: $century-bd;
+						font-size: 2em;
+						background-color: $blue-1;
+						color: $white;
+						padding: .5em 1em;
+					}//title
+					.txt {
+						padding: .5em 1em;
+					}//text
+				}//caption
+			}//list item
+		}// end slider
+		//Feed News
+		.featured-news{
+			margin: 2em auto;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.featured{
+				.last-post{
+					border: 1px solid $gray;
+					min-height: 660px;
+					figure{
+						position: relative;
+						overflow: hidden;	
+					}
+					.caption {
+						header{
+							@include arrowHeader;
+							a {
+								display: block;
+								position: relative;
+								text-decoration: none;
+								h3 {
+									color: $white;
+									text-transform: uppercase;
+									margin: 0;
+								}
+							}
+						}// end header
+						p{
+							padding: 1.4em 2em 1em;
+							a {
+								display: none; 
+							}
+						}
+						.link-info{
+							display: inline-block;
+							color: $white;
+							background-color: $blue-1;
+							text-transform: uppercase;
+							border-radius: 1em;
+							text-align: center;
+							padding: .4em 1em;
+							margin: 1em 2em;
+						}//permalink
+					} //list
+				} //end caption
+			}//end featured new
+			//list of news
+			.feed-news{
+				background-color: $gray-1;
+				padding: 0;
+				header{
+					&.feed-head{
+						@include arrowHeader;
+					}
+				} // header news
+				article{
+					padding: 0 1em;
+					margin: 1.45em auto;
+					overflow: hidden;
+					figure{
+						float: left;
+						margin-right: 1em;
+					} // end of thumb
+					.caption{
+						header {
+							h3{
+								text-transform: uppercase;
+								font-size: 1.2em;
+								margin: 0;
+							}
+						}
+						p{
+							a{
+								display: none;
+							}
+						}
+						> a{
+							font-weight: bold;
+							float: right;
+							margin: 1em 0;
+							display: inline-block;
+							margin-right: 1em;
+							&::after{
+								content: " >";
+								display: inline-block;
+								margin-left: .4em;
+							}
+						}
+					}
+				} // end article iten
+			} // end feed news
+		}//end feed News
+		// bottom news
+		.bottom-news{
+			article {
+				margin-top: 1em;
+				figure{
+					width: 100%;
+					max-height: 157px;
+					overflow: hidden;
+					padding-top: 1em;
+					border-top: 5px solid $blue-1;
+					img {
+						display: block;
+						width: 100%;
+						height: auto;
+					}
+				}
+			}// item post
+		}//end bottom news
+	}// end page
+}//body

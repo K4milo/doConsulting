@@ -58,6 +58,36 @@ body {
 			padding-left:0;
 		}
 	}
+
+	//bxslider fix
+	.bx-wrapper {
+		border: none;
+		box-shadow: none;
+		margin: 0;
+		.bx-pager{
+			bottom: 30px;
+		}
+	}
 }
 
 //------------------ Mixins -----------------------//
+@mixin arrowHeader {
+	background-color: $blue-1;
+	padding: 1em;
+	position: relative;
+	&::after{
+		content: "";
+		display: block;
+		width: 37px;
+		height: 18px;
+		background-image: url('../img/caret_down.png');
+		position: absolute;
+		right: 1em;
+		bottom: -15px;
+	}
+	h1,h2,h3,h4,h5{
+		margin: 0;
+		color: white;
+		text-transform: uppercase;
+	}
+}

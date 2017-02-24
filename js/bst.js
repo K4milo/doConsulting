@@ -14,6 +14,11 @@
 		
 		// You can put your own code in here
 
+		//SLIDER
+		$('.slide-listing').bxSlider({
+			
+		});
+
 	});
 
 }(jQuery));
