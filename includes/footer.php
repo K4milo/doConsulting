@@ -6,7 +6,16 @@
   <hr/>
   <div class="row">
     <div class="col-lg-12 site-sub-footer">
-      <p>&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
+      <?php
+            wp_nav_menu( array(
+                'theme_location'    => 'navbar-left',
+                'depth'             => 2,
+                'menu_class'        => 'footer-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        ?>
+      <p>&copy; <?php echo date('Y'); ?> Cra. 12A # 77A - 52 / Of. 601 · Bogotá D.C</p>
     </div>
   </div>
 </footer>

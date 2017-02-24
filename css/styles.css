@@ -2508,7 +2508,7 @@ body.page-template-home-tpl .featured-news {
         float: right;
         margin: 1em 0;
         display: inline-block;
-        margin-right: 1em; }
+        margin-left: .4em; }
         body.page-template-home-tpl .featured-news .feed-news article .caption > a::after {
           content: " >";
           display: inline-block;
@@ -2526,3 +2526,10 @@ body.page-template-home-tpl .bottom-news article {
       display: block;
       width: 100%;
       height: auto; }
+
+body.page-template-home-tpl .bottom-networks {
+  padding: 2em 0 3em;
+  background-color: #E6E7E8; }
+  body.page-template-home-tpl .bottom-networks iframe {
+    width: 100%;
+    min-height: 360px; }
