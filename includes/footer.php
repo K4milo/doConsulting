@@ -1,10 +1,5 @@
-<footer class="container site-footer">
-  <hr/>
-	<div class="row">
-    <?php dynamic_sidebar('footer-widget-area'); ?>
-  </div>
-  <hr/>
-  <div class="row">
+<footer class="site-footer">
+  <div class="container">
     <div class="col-lg-12 site-sub-footer">
       <?php
             wp_nav_menu( array(

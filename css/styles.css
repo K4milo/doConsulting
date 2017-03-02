@@ -2551,10 +2551,11 @@ body.page-template-home-tpl .home-services header {
       display: block;
       width: 100%;
       height: 5px;
-      width: #008eab;
+      width: 88%;
+      background-color: #008eab;
       position: absolute;
       top: 40%;
-      left: 0; }
+      right: 0; }
 
 body.page-template-home-tpl .home-services .services {
   border: 3px solid #ffffff;
@@ -2573,5 +2574,21 @@ body.page-template-home-tpl .home-services .services {
       color: #ffffff;
       padding: 1em;
       margin: 0; }
-  body.page-template-home-tpl .home-services .services.item-1, body.page-template-home-tpl .home-services .services.item-4 {
-    background-color: rgba(0, 142, 171, 0.63); }
+  body.page-template-home-tpl .home-services .services.item-1 .caption, body.page-template-home-tpl .home-services .services.item-4 .caption {
+    background-color: rgba(97, 218, 243, 0.63); }
+
+.site-footer {
+  margin: 2em auto 0;
+  padding: 2em;
+  text-align: center;
+  background-color: #008eab; }
+  .site-footer ul.footer-nav li {
+    display: inline-block; }
+    .site-footer ul.footer-nav li a {
+      color: #ffffff;
+      font-weight: bold;
+      border-right: 1px solid #ffffff;
+      margin: 0 1.4em; }
+  .site-footer p {
+    text-align: center;
+    color: #ffffff; }
