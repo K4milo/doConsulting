@@ -44,6 +44,9 @@ body {
 			@include mobile {
 				min-height: 33px;
 			}
+			.text-3.widget_text {
+				display: none;
+			}
 		}
 		//content
 		.the_content {

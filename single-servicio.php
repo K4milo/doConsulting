@@ -2,7 +2,7 @@
   /*
     Template Name: Services
   */
-	get_template_part('includes/header'); ?>¿
+	get_template_part('includes/header'); ?>
 
 	<div class="banner-services">
 		<div class="container no-gutter">

@@ -1,0 +1,135 @@
+/*____________________________________
+ 
+ Servicios
+ ______________________________________*/
+
+body {
+	&.page-template-services-tpl,
+	&.single-servicio {
+		background-image: url('../img/bg-2.jpg');
+		background-color: $blue-1;
+		background-position: top left;
+		background-repeat: no-repeat;
+		//Banner servicios
+		.banner-services{
+			//header
+			header {
+				h2 {
+					border: 1px solid $white;
+					color: $white;
+					margin-top: 2em;
+					display: block;
+					max-width: 260px;
+					text-align: right;
+					padding: .3em .4em;
+					@include mobile {
+						margin: 1em auto;
+						text-align: center;
+					}
+				}
+			}
+			//ipad
+			.ipad{
+				position: relative;
+				margin: 1em auto;
+				
+				//items
+				.mask {
+					overflow: auto;
+					width: auto; 
+					height: auto;
+					article{
+						//item
+						&.services {
+							position:relative;
+							overflow: auto;
+							height: auto;
+							.thumbs {
+								img {
+									width: 100%;
+									height: auto;
+								}
+							}
+							.caption {
+								position: absolute;
+								background-color: $blue-op1;
+								width: 100%;
+								bottom: 0;
+								left: 0;
+								h3{
+									text-transform: uppercase;
+									color: $white;
+									padding: 1em;
+									margin: 0;
+									font-size: 1em;
+								}
+							}
+							&.item-1,
+							&.item-4 {
+								.caption {
+									background-color: $blue-op2;					
+								}
+							}
+							@include mobile {
+								margin: 1em auto;
+							}
+						}
+					}
+				}
+
+				//desktop presentation
+				
+				@include desktop {
+					width: 788px;
+					height: 537px;
+					background-image: url('../img/bg-ipad.png');
+					background-repeat: no-repeat;
+					.mask {
+						position: relative;
+						overflow: hidden;
+						width: 630px;
+						height: 474px;
+						top: 25px;
+						left: 80px;
+						article {
+							//item
+							&.services {
+								position:relative;
+								overflow: hidden;
+								height: 237px;
+								.thumbs{
+									height: 237px;
+									img {
+										height: 100%;
+										width: auto;
+										max-width: inherit;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}// end of banner
+		//text service
+		.service-item{
+			position: relative;
+			margin: 1em auto;
+			max-width: 700px;
+			color: $white;
+			padding-bottom: 4em;
+			header{
+				h2{
+					color: $white;
+					font-size: 4em;
+					margin: 1em auto;
+					text-align: center;
+					@include mobile {
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+
+}
