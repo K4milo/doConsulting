@@ -2368,6 +2368,21 @@ body {
     margin: 0; }
     body .bx-wrapper .bx-pager {
       bottom: 30px; }
+  body aside.sidebar {
+    background-color: #F1F2F2;
+    margin: 0;
+    padding: 1em; }
+    body aside.sidebar iframe {
+      position: relative !important;
+      max-width: 100%; }
+    @media (max-width: 768px) {
+      body aside.sidebar {
+        margin: 1em auto;
+        text-align: center;
+        display: block;
+        width: 100%;
+        float: none;
+        clear: both; } }
 
 .navbar.navbar-default {
   margin: 0;
@@ -2387,6 +2402,13 @@ body {
       top: 50px; }
     .navbar.navbar-default .container .menu-m-container {
       float: right; }
+      @media (max-width: 768px) {
+        .navbar.navbar-default .container .menu-m-container {
+          text-align: center;
+          display: block;
+          width: 100%;
+          float: none;
+          clear: both; } }
     .navbar.navbar-default .container i {
       display: block;
       position: absolute;
@@ -2418,7 +2440,7 @@ body.page-template-home-tpl .slide-listing {
       body.page-template-home-tpl .slide-listing li .caption h5 {
         font-family: "Century Gothic Bold";
         font-size: 2em;
-        background-color: #008eab;
+        background-color: #018EAA;
         color: #ffffff;
         padding: .5em 1em; }
       body.page-template-home-tpl .slide-listing li .caption .txt {
@@ -2436,7 +2458,7 @@ body.page-template-home-tpl .featured-news {
       position: relative;
       overflow: hidden; }
     body.page-template-home-tpl .featured-news .featured .last-post .caption header {
-      background-color: #008eab;
+      background-color: #018EAA;
       padding: 1em;
       position: relative; }
       body.page-template-home-tpl .featured-news .featured .last-post .caption header::after {
@@ -2467,7 +2489,7 @@ body.page-template-home-tpl .featured-news {
     body.page-template-home-tpl .featured-news .featured .last-post .caption .link-info {
       display: inline-block;
       color: #ffffff;
-      background-color: #008eab;
+      background-color: #018EAA;
       text-transform: uppercase;
       border-radius: 1em;
       text-align: center;
@@ -2477,7 +2499,7 @@ body.page-template-home-tpl .featured-news {
     background-color: #E6E7E8;
     padding: 0; }
     body.page-template-home-tpl .featured-news .feed-news header.feed-head {
-      background-color: #008eab;
+      background-color: #018EAA;
       padding: 1em;
       position: relative; }
       body.page-template-home-tpl .featured-news .feed-news header.feed-head::after {
@@ -2524,7 +2546,7 @@ body.page-template-home-tpl .bottom-news article {
     max-height: 157px;
     overflow: hidden;
     padding-top: 1em;
-    border-top: 5px solid #008eab; }
+    border-top: 5px solid #018EAA; }
     body.page-template-home-tpl .bottom-news article figure img {
       display: block;
       width: 100%;
@@ -2544,7 +2566,7 @@ body.page-template-home-tpl .home-services header {
   margin: 1em auto 2em; }
   body.page-template-home-tpl .home-services header h3 {
     text-transform: uppercase;
-    color: #008eab;
+    color: #018EAA;
     background-color: #ffffff; }
     body.page-template-home-tpl .home-services header h3::after {
       content: "";
@@ -2552,7 +2574,7 @@ body.page-template-home-tpl .home-services header {
       width: 100%;
       height: 5px;
       width: 88%;
-      background-color: #008eab;
+      background-color: #018EAA;
       position: absolute;
       top: 40%;
       right: 0; }
@@ -2577,18 +2599,84 @@ body.page-template-home-tpl .home-services .services {
   body.page-template-home-tpl .home-services .services.item-1 .caption, body.page-template-home-tpl .home-services .services.item-4 .caption {
     background-color: rgba(97, 218, 243, 0.63); }
 
+/*____________________________________
+ 
+ About
+ ______________________________________*/
+body.page-template-about-tpl .blue-bg {
+  background-image: url("../img/bg-1.jpg");
+  background-color: #018EAA;
+  background-position: top left;
+  background-repeat: no-repeat; }
+
+body.page-template-about-tpl #mision {
+  position: relative;
+  min-height: 406px; }
+  body.page-template-about-tpl #mision p,
+  body.page-template-about-tpl #mision h2 {
+    color: #ffffff; }
+  body.page-template-about-tpl #mision h2 {
+    border: 1px solid #ffffff;
+    margin-top: 4em;
+    display: block;
+    max-width: 200px;
+    text-align: right;
+    padding: .3em .4em; }
+    @media (max-width: 768px) {
+      body.page-template-about-tpl #mision h2 {
+        margin: 1em auto;
+        text-align: center; } }
+    body.page-template-about-tpl #mision h2::nth-child(2) {
+      margin-top: 5em; }
+      @media (max-width: 768px) {
+        body.page-template-about-tpl #mision h2::nth-child(2) {
+          margin: 1em auto; } }
+
+body.page-template-about-tpl aside {
+  min-height: 540px; }
+  @media (max-width: 768px) {
+    body.page-template-about-tpl aside {
+      min-height: 33px; } }
+
+body.page-template-about-tpl .the_content h1 {
+  border: 1px solid #018EAA;
+  color: #018EAA;
+  margin-top: 1em;
+  display: block;
+  max-width: 260px;
+  text-align: right;
+  padding: .3em .4em; }
+  @media (max-width: 768px) {
+    body.page-template-about-tpl .the_content h1 {
+      margin: 1em auto;
+      text-align: center; } }
+
+body.page-template-about-tpl .the_content article {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 2em; }
+  body.page-template-about-tpl .the_content article h2 {
+    margin: 4em 0 0 0;
+    font-size: 1.3em;
+    color: #018EAA; }
+  body.page-template-about-tpl .the_content article img {
+    float: left;
+    margin: 1em;
+    max-width: 100%;
+    height: auto; }
+
 .site-footer {
   margin: 2em auto 0;
   padding: 2em;
   text-align: center;
-  background-color: #008eab; }
+  background-color: #018EAA; }
   .site-footer ul.footer-nav li {
     display: inline-block; }
     .site-footer ul.footer-nav li a {
       color: #ffffff;
       font-weight: bold;
       border-right: 1px solid #ffffff;
-      margin: 0 1.4em; }
+      padding: 0 1.4em; }
   .site-footer p {
     text-align: center;
     color: #ffffff; }

@@ -3,18 +3,18 @@
 	padding: 2em;
 	text-align: center;
 	background-color: $blue-1;
-	ul.footer-nav{
-		li{
+	ul.footer-nav {
+		li {
 			display: inline-block;
-			a{
+			a {
 				color: $white;
 				font-weight: bold;
 				border-right: 1px solid $white;
-				margin: 0 1.4em;
+				padding: 0 1.4em;
 			}
 		}
 	}
-	p{
+	p {
 		text-align: center;
 		color: $white;
 	}

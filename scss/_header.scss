@@ -23,6 +23,13 @@
 			//menu
 			.menu-m-container{
 				float: right;
+				@include mobile {
+					text-align: center;
+					display: block;
+					width: 100%;
+					float: none;
+					clear: both;
+				}
 			}
 			//search icon
 			i { 

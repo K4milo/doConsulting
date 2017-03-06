@@ -32,7 +32,45 @@
 	font-style: normal;
 }
 
-//------------------ body styles -----------------------//
+//media queries
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin bdesktop {
+  @media (min-width: #{$big-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin defdesktop {
+  @media (max-width: #{$big-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+
+@mixin sm-desktop {
+  @media (max-width: #{$sm-desktop-width}) {
+    @content;
+  }
+}
+
+//------------------ general from body styles -----------------------//
 
 body {
 	font-family: $century;
@@ -68,6 +106,30 @@ body {
 			bottom: 30px;
 		}
 	}
+	
+	//sidebar
+	aside{
+		&.sidebar{
+			background-color: $white-gr;
+			margin: 0;
+			padding: 1em;
+			iframe{
+				position: relative !important;
+				max-width: 100%;
+			}
+
+			@include mobile {
+				margin: 1em auto;
+				text-align: center;
+				display: block;
+				width: 100%;
+				float: none;
+				clear: both;
+			}
+		}
+	}
+
+
 }
 
 //------------------ Mixins -----------------------//
