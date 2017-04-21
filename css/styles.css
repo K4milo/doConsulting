@@ -2588,7 +2588,7 @@ body.page-template-home-tpl .home-services .services {
       color: #ffffff;
       font-weight: bold;
       border-right: 1px solid #ffffff;
-      margin: 0 1.4em; }
+      padding: 0 1.4em; }
   .site-footer p {
     text-align: center;
     color: #ffffff; }
