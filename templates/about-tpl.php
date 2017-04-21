@@ -14,7 +14,11 @@
         </div><!-- /#content -->
       </div>
       
+<<<<<<< HEAD
       <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
+=======
+      <div class="col-sm-4" id="sidebar" role="navigation">
+>>>>>>> 03b2c09997d0853e1eec21d847a05b686aaa228e
         <?php get_template_part('includes/sidebar'); ?>
       </div>
     </div>

@@ -1,0 +1,70 @@
+/*____________________________________
+ 
+ NEWS
+ ______________________________________*/
+body {
+	&.page-template-news-tpl {
+		.list-news {
+			.feed-news {
+				.feed-head {
+					h3 {
+						border: 1px solid $blue-1;
+						color: $blue-1;
+						margin-top: 1em;
+						display: block;
+						max-width: 220px;
+						text-align: left;
+						padding: .3em .4em;
+						text-transform: uppercase;
+						@include mobile {
+							margin: 1em auto;
+							text-align: center;
+						}
+					}
+				}// end header
+				article {
+					&.news {
+						padding-bottom: 1em;
+						margin-bottom: 2em;
+						border-bottom: 5px solid $blue-1;
+						.thumbs{
+							max-height: 400px;
+							overflow: hidden;
+							img{
+								width: 100%;
+								height: auto;
+							}
+						}
+						.caption{
+							//tilte
+							header {
+								h3 {
+									color: $blue-1;
+								}
+							}
+							> a {
+								display: inline-block;
+								background-color: $blue-1;
+								color: $white;
+								text-align: center;
+								padding: .5em 1em;
+							}
+						}
+					}
+				}
+			} // Las feed
+		} // List News
+	}
+
+	//SINGLE POST
+	&.single-post{
+		#content {
+			article {
+				img{
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}

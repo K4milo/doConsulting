@@ -1,0 +1,86 @@
+/*____________________________________
+ 
+ About
+ ______________________________________*/
+body {
+	&.page-template-about-tpl {
+		.blue-bg {
+			background-image: url('../img/bg-1.jpg');
+			background-color: $blue-1;
+			background-position: top left;
+			background-repeat: no-repeat;
+		}
+		// textos mision y vision
+		#mision {
+			position: relative;
+			min-height: 406px;
+			p,
+			h2 {
+				color: $white;
+			}
+			// titles
+			h2{
+				border: 1px solid $white;
+				margin-top: 4em;
+				display: block;
+				max-width: 200px;
+				text-align: right;
+				padding: .3em .4em;
+				@include mobile {
+					margin: 1em auto;
+					text-align: center;
+				}
+				&::nth-child(2){
+					margin-top: 5em;
+					@include mobile {
+						margin: 1em auto;
+					}	
+				}
+			}
+		}
+		// sidebar
+		aside{
+			min-height: 540px;
+			@include mobile {
+				min-height: 33px;
+			}
+			.text-3.widget_text {
+				display: none;
+			}
+		}
+		//content
+		.the_content {
+			// title
+			h1 {
+				border: 1px solid $blue-1;
+				color: $blue-1;
+				margin-top: 1em;
+				display: block;
+				max-width: 260px;
+				text-align: right;
+				padding: .3em .4em;
+				@include mobile {
+					margin: 1em auto;
+					text-align: center;
+				}
+			}
+			//article item
+			article {
+				display: block;
+				overflow: hidden;
+				margin-bottom: 2em;
+				h2{
+					margin: 4em 0 0 0;
+					font-size: 1.3em;
+					color: $blue-1;
+				}
+				img {
+					float: left;
+					margin: 1em;
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		} 
+	}
+}

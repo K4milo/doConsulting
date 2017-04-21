@@ -2,11 +2,11 @@
 	margin: 2em auto 0;
 	padding: 2em;
 	text-align: center;
-	background-color: $blue-1;
-	ul.footer-nav{
-		li{
+	background-color: $blue-2;
+	ul.footer-nav {
+		li {
 			display: inline-block;
-			a{
+			a {
 				color: $white;
 				font-weight: bold;
 				border-right: 1px solid $white;
@@ -14,8 +14,8 @@
 			}
 		}
 	}
-	p{
+	p {
 		text-align: center;
-		color: $white;
+		color: $white; 
 	}
 }
