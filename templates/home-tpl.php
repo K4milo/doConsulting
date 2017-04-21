@@ -8,32 +8,39 @@
 	<!--Slider home-->
 	<?php get_template_part('includes/loops/slides');?>
 
-	<div class="container featured-news">
-		<div class="featured col-md-6">
-			<?php get_template_part('includes/loops/last-post');?>
-		</div>
-		<div class="feed-news col-md-6">
-			<header class="feed-head">
-				<h3>Noticias</h3>
-			</header>
-			<?php get_template_part('includes/loops/last-posts');?>
+	<div class="featured-news">
+		<div class="container">
+			<div class="featured col-md-6">
+				<?php get_template_part('includes/loops/last-post');?>
+			</div>
+			<div class="feed-news col-md-6">
+				<?php get_template_part('includes/loops/last-posts');?>
+			</div>
 		</div>
 	</div>
 
-	<div class="container bottom-news">
-		<?php get_template_part('includes/loops/last-three-posts');?>
+	<div class="top-networks">
+		<div class="container">
+			<div class="col-md-8 yt">
+				<span class="circle-icon"> <i class="fa fa-youtube-play" aria-hidden="true"></i> </span>
+				<iframe src="https://www.youtube.com/embed/3jAICtsAVcQ?ecver=2" width="100%" frameborder="0"  allowfullscreen></iframe>
+			</div>
+			<div class="col-md-4 fb">
+				<span class="circle-icon"> <i class="fa fa-facebook" aria-hidden="true"></i> </span>
+				<div class="fb-page" data-href="https://www.facebook.com/doconsultingcolombia/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/doconsultingcolombia/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/doconsultingcolombia/">Do Consulting</a></blockquote></div>
+			</div>
+		</div>
 	</div>
 
 	<div class="bottom-networks">
 		<div class="container">
-			<div class="col-md-4 fb">
-				<div class="fb-page" data-href="https://www.facebook.com/doconsultingcolombia/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/doconsultingcolombia/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/doconsultingcolombia/">Do Consulting</a></blockquote></div>
+			<div class="col-md-8 fl">
+			<span class="circle-icon"><i class="fa fa-flickr" aria-hidden="true"></i></span>
+			<a data-flickr-embed="true"  href="https://www.flickr.com/photos/stuckincustoms/albums/72157634886801652" title="Alaska"><img src="https://c1.staticflickr.com/4/3704/9412251143_fba2700afe_z.jpg" width="100%" height="432" alt="Alaska"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 			</div>
 			<div class="col-md-4 tw">
+				<span class="circle-icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
 				<a class="twitter-timeline" data-height="400" href="https://twitter.com/DoConsulting1" data-tweet-limit="1">Tweets by DoConsulting1</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-			<div class="col-md-4 yt">
-				<iframe src="https://www.youtube.com/embed/3jAICtsAVcQ?ecver=2" width="100%" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

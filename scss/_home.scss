@@ -35,7 +35,8 @@ body {
 		}// end slider
 		//Feed News
 		.featured-news{
-			margin: 2em auto;
+			background-color: $gray-3;
+			padding: 2em 0;
 			img {
 				max-width: 100%;
 				height: auto;
@@ -49,51 +50,38 @@ body {
 						overflow: hidden;	
 					}
 					.caption {
+						background-color: $white;
 						header{
-							@include arrowHeader;
 							a {
 								display: block;
 								position: relative;
 								text-decoration: none;
 								h3 {
-									color: $white;
-									text-transform: uppercase;
+									color: $blue-1;
+									padding: 1em;
+									border-bottom: 1px solid $gray-1;
 									margin: 0;
 								}
 							}
 						}// end header
-						p{
-							padding: 1.4em 2em 1em;
+						p {
+							padding: 0 20px;
 							a {
 								display: none; 
 							}
 						}
-						.link-info{
-							display: inline-block;
-							color: $white;
-							background-color: $blue-1;
-							text-transform: uppercase;
-							border-radius: 1em;
-							text-align: center;
-							padding: .4em 1em;
-							margin: 1em 2em;
-						}//permalink
 					} //list
 				} //end caption
 			}//end featured new
 			//list of news
-			.feed-news{
-				background-color: $gray-1;
+			.feed-news {
 				padding: 0;
-				header{
-					&.feed-head{
-						@include arrowHeader;
-					}
-				} // header news
 				article{
-					padding: 0 1em;
-					margin: 1.45em auto;
+					padding: 1em;
+					margin: 0 auto 1.45em;
 					overflow: hidden;
+					background-color: $white;
+					border: 1px solid $gray;
 					figure{
 						float: left;
 						margin-right: 1em;
@@ -101,27 +89,27 @@ body {
 					.caption{
 						header {
 							h3{
-								text-transform: uppercase;
+								color: $blue-1;
 								font-size: 1.2em;
 								margin: 0;
+								font-weight: bold;
+								border-bottom: 1px solid $gray-1;
+								padding-bottom: 1em;
 							}
 						}
 						p{
-							a{
+							display: none;
+							padding-top: 1em;
+							a {
 								display: none;
 							}
 						}
-						> a{
+						> a {
 							font-weight: bold;
 							float: right;
 							margin: 1em 0;
 							display: inline-block;
 							margin-left: .4em;
-							&::after{
-								content: " >";
-								display: inline-block;
-								margin-left: .4em;
-							}
 						}
 					}
 				} // end article iten
@@ -145,17 +133,69 @@ body {
 				}
 			}// item post
 		}//end bottom news
+		
+		.top-networks {
+			background-color: $gray-1;
+			padding: 2em 0;
+			.col-md-8,
+			.col-md-4 {
+				position: relative;
+				.circle-icon {
+					position: absolute;
+					top: -10px;
+					left: 50%;;
+					margin-left: -20px;
+				}
+				.fb_iframe_widget,
+				iframe {
+					margin: 1em auto !important;
+					width: 100% !important;
+					height: 400px !important;
+					padding: 2em;
+					background-color: white;
+					padding: 2em; 
+					span{
+						width: 100% !important;
+						height: 100% !important;
+						margin: 0 !important;
+						top: 0 !important;
+						left: 0 !important;
+						iframe {
+							padding: 0 !important;
+						}
+					}   
+				}
+			}
+		}
+
 		.bottom-networks{
 			padding: 2em 0 3em;
-			background-color: $gray-1;
 			margin: 2em auto;
-			iframe{
-				width: 100%;
-				min-height: 360px;
+			background-image: url(../img/bg-3.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			.col-md-8,
+			.col-md-4 {
+				position: relative;
+				.circle-icon {
+					position: absolute;
+					top: -10px;
+					left: 50%;;
+					margin-left: -20px;
+				}
+				iframe {
+					margin: 1em auto !important;
+					width: 100% !important;
+					height: 400px !important;
+					padding: 2em;
+					background-color: white;
+					padding: 2em;
+				}
 			}
 		}//end bottom
 		//Home services
 		.home-services{
+			text-align: center;
 			header {
 				position: relative;
 				display: block;
@@ -164,6 +204,7 @@ body {
 					text-transform: uppercase;
 					color: $blue-1;
 					background-color: $white;
+					text-align: left;
 					&::after{
 						content: "";
 						display: block;
@@ -181,29 +222,31 @@ body {
 			.services {
 				border: 3px solid $white;
 				position:relative;
+				width: 30%;
+				margin: 1%;
+				display: inline-block;
+				float: none;
+				vertical-align: top;
 				.thumbs {
+					display: block;
+					width: 200px;
+					height: 200px;
+					border-radius: 100%;
+					overflow: hidden;
+					margin: 1em auto;
 					img {
-						width: 100%;
-						height: auto;
+						width: auto;
+						height: 100%;
 					}
 				}
 				.caption {
-					position: absolute;
-					background-color: $blue-op1;
 					width: 100%;
 					bottom: 0;
 					left: 0;
+					text-align: center;
 					h3{
-						text-transform: uppercase;
-						color: $white;
+						color: $blue-1;
 						padding: 1em;
-						margin: 0;
-					}
-				}
-				&.item-1,
-				&.item-4 {
-					.caption {
-						background-color: $blue-op2;						
 					}
 				}
 			}
