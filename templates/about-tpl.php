@@ -8,21 +8,13 @@
 <div class="container-fluid blue-bg">
   <div class="row">
     <div class="container">
-      <div class="col-xs-12 col-sm-8">
-        <div id="mision">
-          <?php echo types_render_field('mision-vision'); ?>
-        </div><!-- /#content -->
-      </div>
-      
-<<<<<<< HEAD
-      <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
-=======
-      <div class="col-sm-4" id="sidebar" role="navigation">
->>>>>>> 03b2c09997d0853e1eec21d847a05b686aaa228e
-        <?php get_template_part('includes/sidebar'); ?>
+      <header class="page-head">
+          <h2><?php the_title(); ?></h2>
+      </header>
+      <div class="content">
+        <?php echo types_render_field('mision-vision'); ?>
       </div>
     </div>
-    
   </div><!-- /.row -->
 </div><!-- /.container -->
 

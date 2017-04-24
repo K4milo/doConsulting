@@ -36,7 +36,9 @@
 		<div class="container">
 			<div class="col-md-8 fl">
 			<span class="circle-icon"><i class="fa fa-flickr" aria-hidden="true"></i></span>
-			<a data-flickr-embed="true"  href="https://www.flickr.com/photos/stuckincustoms/albums/72157634886801652" title="Alaska"><img src="https://c1.staticflickr.com/4/3704/9412251143_fba2700afe_z.jpg" width="100%" height="432" alt="Alaska"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				
+				<a data-flickr-embed="true" data-header="true" data-footer="true"  href="https://www.flickr.com/photos/doconsultingco/34036493711/" title="L&#x27;Oréal Colombia - Cartagena 1"><img src="https://c1.staticflickr.com/3/2906/34036493711_058c8b9575_z.jpg" width="100%" height="480" alt="L&#x27;Oréal Colombia - Cartagena 1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 			</div>
 			<div class="col-md-4 tw">
 				<span class="circle-icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
