@@ -40,7 +40,6 @@ body {
 				p {
 					color: white; 
 					text-align: center;
-					padding: 2em 1em;
 				}
 				//article item
 				.col-md-6 {
@@ -65,6 +64,7 @@ body {
 							color: $gray-5;
 							max-width: 90%;
 							margin: 5%;
+							text-align: left;
 						}
 					}
 				}

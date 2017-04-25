@@ -9,11 +9,12 @@ body {
 			padding: 0;
 			li {
 				display: block;
-				height: 500px;
+				height: 600px;
 				background-size: cover;
 				background-position: top center;
 				//caption
 				.caption {
+					display: none;
 					background-color: rgba(255,255,255,.7);
 					position: relative;
 					width: 450px;
