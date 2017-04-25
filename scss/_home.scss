@@ -44,10 +44,10 @@ body {
 			.featured{
 				.last-post{
 					border: 1px solid $gray;
-					min-height: 660px;
 					figure{
 						position: relative;
-						overflow: hidden;	
+						overflow: hidden;
+						height: 215px;	
 					}
 					.caption {
 						background-color: $white;
@@ -98,7 +98,6 @@ body {
 							}
 						}
 						p{
-							display: none;
 							padding-top: 1em;
 							a {
 								display: none;
@@ -154,6 +153,7 @@ body {
 					padding: 2em;
 					background-color: white;
 					padding: 2em; 
+					overflow: auto;
 					span{
 						width: 100% !important;
 						height: 100% !important;

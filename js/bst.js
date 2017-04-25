@@ -15,8 +15,13 @@
 		// You can put your own code in here
 
 		//SLIDER
-		$('.slide-listing').bxSlider({
-			
+		$('.slide-listing').bxSlider({});
+
+		$('.carousel').slick({
+		  dots: true,
+		  infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 3
 		});
 
 		//scroll navigation

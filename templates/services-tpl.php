@@ -11,7 +11,7 @@
 			</header>
 			<div class="ipad">
 				<div class="mask no-gutter">
-				<?php get_template_part('includes/loops/services-home');?>
+				<?php get_template_part('includes/loops/services');?>
 				</div>
 			</div>
 		</div>

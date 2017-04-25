@@ -128,6 +128,40 @@ body {
 			background-color: $white-gr;
 			margin: 0;
 			padding: 1em;
+			
+			.widget_text{
+				padding: 1em;
+				margin : 1em auto;
+				position: relative;
+				
+				h4 {
+					width: 200px;
+					margin: 0 auto 2em;
+					text-align: center;
+					padding: 1em;
+					border-bottom: 1px solid $gray;
+				}	
+
+				.textwidget{
+					h4{
+						color: white;
+						background-color: $blue-1;
+						display: block;
+						margin: 2em 0 -1.5em 0;
+						font-size: 1em;
+						width: 220px;
+						padding: 1em;
+						text-align: left;
+					}
+
+					.cont-iframe {
+						display: block;
+						border: 1px solid $blue-1;
+						padding: 2em 1em 1em;
+					}
+				}
+			}
+
 			iframe{
 				position: relative !important;
 				max-width: 100%;
@@ -152,7 +186,7 @@ body {
 		text-transform: capitalize;
 		text-align: center;
 		padding:  .5em 2em;
-		margin: 1em 2em;
+		margin: 1em 0;
 		font-weight: bold;
 	}//permalink
 

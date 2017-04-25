@@ -1,7 +1,7 @@
 <?php
 	
 	$args = array(
-		'posts_per_page' => 3,
+		'posts_per_page' => 2,
 		'offset' => 1
 	);
 

@@ -13,6 +13,12 @@ function bst_enqueues() {
 	wp_register_style('bxslider-css', get_template_directory_uri() . '/css/jquery.bxslider.min.css', false, null);
 	wp_enqueue_style('bxslider-css');
 
+	wp_register_style('slick-css', get_template_directory_uri() . '/css/slick.css', false, null);
+	wp_enqueue_style('slick-css');
+
+	wp_register_style('slick-theme-css', get_template_directory_uri() . '/css/slick-theme.css', false, null);
+	wp_enqueue_style('slick-theme-css');
+
 	wp_register_style('styles-css', get_template_directory_uri() . '/css/styles.css', false, null);
 	wp_enqueue_style('styles-css');
 
@@ -30,6 +36,9 @@ function bst_enqueues() {
 
 	wp_register_script('bxslider-js', get_template_directory_uri() . '/js/jquery.bxslider.min.js', false, null, true);
 	wp_enqueue_script('bxslider-js');
+
+	wp_register_script('slick.min-js', get_template_directory_uri() . '/js/slick.min.js', false, null, true);
+	wp_enqueue_script('slick.min-js');
 
 	wp_register_script('bst-js', get_template_directory_uri() . '/js/bst.js', false, null, true);
 	wp_enqueue_script('bst-js');

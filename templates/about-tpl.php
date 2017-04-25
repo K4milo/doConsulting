@@ -19,10 +19,12 @@
 </div><!-- /.container -->
 
 <div class="container-fluid">
-  <div class="the_content">
-    <div id="content" class="container" role="main">
-      <?php get_template_part('includes/loops/content', 'page'); ?>
-    </div><!-- /#content -->
+  <div class="row">
+    <div class="the_content">
+      <div id="content" class="container" role="main">
+        <?php get_template_part('includes/loops/content', 'page'); ?>
+      </div><!-- /#content -->
+    </div>
   </div>
 </div>
 

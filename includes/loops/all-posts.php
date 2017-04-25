@@ -5,7 +5,7 @@
 	);
 
 	query_posts($args);
-	while(have_posts()):the_post();
+	while(have_posts()):the_post(); 
 ?>
 	
 	<article class="news item" id="post_<?php the_ID()?>">
@@ -19,7 +19,7 @@
 				</a>
 			</header>
 			<?php the_excerpt(); ?>
-			<a href="<?php the_permalink(); ?>" class="link-info">Ver Más</a>
+			<a href="<?php the_permalink(); ?>" class="link-info">Leer Más</a>
 		</div>
 	</article>
 
