@@ -1,10 +1,12 @@
 //----------- HEADER --------------//
+
 .navbar {
 	&.navbar-default {
 		margin: 0;
 		position: relative;
-		padding: .5em 0;
+		padding: 3em 0 .5em;
 		border-bottom: 4px solid $blue-2;
+		background-color: white;
 		.container{
 			position: relative;
 			padding-right: 30px;
@@ -22,6 +24,33 @@
 				position: absolute;
 				top: 50px;
 			}
+			
+			//social header
+			.social-header{
+				position: absolute;
+				right: 0;
+				top: 0;
+				li{
+					display: inline-block;
+					margin: 0 1em;
+					a{
+						font-size: 1.5em;
+						color: $gray-3;
+						&:hover {
+							color: $blue-1;
+						}
+					}
+				}
+
+				@include mobile {
+					text-align: center;
+					display: block;
+					width: 100%;
+					float: none;
+					clear: both;
+				}
+			}
+
 			//menu
 			.menu-m-container{
 				float: right;
@@ -31,6 +60,30 @@
 					width: 100%;
 					float: none;
 					clear: both;
+				}
+				
+				.navbar-nav {
+					>li {
+						> a {
+							font-weight: bold;
+							position: relative;
+							&::after{
+								content: "";
+								display: block;
+								width: 2px;
+								height: 5px;
+								position: absolute;
+								background-color: $blue-1;
+								right: 0;
+								top: 50%;
+								margin-top: -2.5px;
+								&:hover,
+								&:focus {
+									background-color: $blue-1;
+								}
+							}
+						}
+					}
 				}
 			}
 			//search icon

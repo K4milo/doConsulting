@@ -46,6 +46,14 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
+
+      <ul class="social-header">
+        <li><a href="https://www.facebook.com/doconsultingcolombia/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/DoConsulting1" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/embed/3jAICtsAVcQ?ecver=2" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.flickr.com/photos/doconsultingco/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+      </ul>
+
         <i class="fa fa-search" aria-hidden="true"></i>
         <div class="tog-search">
           <?php get_template_part('includes/navbar-search'); ?>
