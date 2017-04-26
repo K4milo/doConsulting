@@ -4,7 +4,7 @@
 	&.navbar-default {
 		margin: 0;
 		position: relative;
-		padding: 3em 0 .5em;
+		padding: 3em 0 1em;
 		border-bottom: 4px solid $blue-2;
 		background-color: white;
 		.container{
@@ -39,6 +39,9 @@
 						&:hover {
 							color: $blue-1;
 						}
+						i{
+							position: relative;
+						}
 					}
 				}
 
@@ -48,6 +51,7 @@
 					width: 100%;
 					float: none;
 					clear: both;
+					position: relative;
 				}
 			}
 

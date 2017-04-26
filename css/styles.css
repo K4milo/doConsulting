@@ -2432,7 +2432,7 @@ body {
 .navbar.navbar-default {
   margin: 0;
   position: relative;
-  padding: 3em 0 .5em;
+  padding: 3em 0 1em;
   border-bottom: 4px solid #0D6A7E;
   background-color: white; }
   .navbar.navbar-default .container {
@@ -2460,13 +2460,16 @@ body {
           color: #F2F2F2; }
           .navbar.navbar-default .container .social-header li a:hover {
             color: #018EAA; }
+          .navbar.navbar-default .container .social-header li a i {
+            position: relative; }
       @media (max-width: 768px) {
         .navbar.navbar-default .container .social-header {
           text-align: center;
           display: block;
           width: 100%;
           float: none;
-          clear: both; } }
+          clear: both;
+          position: relative; } }
     .navbar.navbar-default .container .menu-m-container {
       float: right; }
       @media (max-width: 768px) {
