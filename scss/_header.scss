@@ -29,13 +29,13 @@
 			.social-header{
 				position: absolute;
 				right: 0;
-				top: 0;
+				top: -38px;
 				li{
 					display: inline-block;
 					margin: 0 1em;
 					a{
 						font-size: 1.5em;
-						color: $gray-3;
+						color: $gray-1;
 						&:hover {
 							color: $blue-1;
 						}
@@ -52,6 +52,7 @@
 					float: none;
 					clear: both;
 					position: relative;
+					top: 0;
 				}
 			}
 

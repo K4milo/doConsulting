@@ -2451,13 +2451,13 @@ body {
     .navbar.navbar-default .container .social-header {
       position: absolute;
       right: 0;
-      top: 0; }
+      top: -38px; }
       .navbar.navbar-default .container .social-header li {
         display: inline-block;
         margin: 0 1em; }
         .navbar.navbar-default .container .social-header li a {
           font-size: 1.5em;
-          color: #F2F2F2; }
+          color: #E6E7E8; }
           .navbar.navbar-default .container .social-header li a:hover {
             color: #018EAA; }
           .navbar.navbar-default .container .social-header li a i {
@@ -2469,7 +2469,8 @@ body {
           width: 100%;
           float: none;
           clear: both;
-          position: relative; } }
+          position: relative;
+          top: 0; } }
     .navbar.navbar-default .container .menu-m-container {
       float: right; }
       @media (max-width: 768px) {
