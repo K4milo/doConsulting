@@ -17,13 +17,22 @@
 				height: 57px;
 				background-image: url(../img/logo.png);
 				padding: 2em 0 1em;
+				@include mobile {
+					margin-left: 1em;
+				}
 			}
 			//hide search
 			.tog-search {
 				display: none;
 				position: absolute;
 				top: 50px;
+				right: 0;
+				background: white;
+				padding: .5em 1em;
+				box-shadow: 0 0 10px #ccc;
 			}
+
+
 			
 			//social header
 			.social-header{
@@ -68,7 +77,16 @@
 				}
 				
 				.navbar-nav {
+					
 					>li {
+
+						&.active>a,
+						&.active>a:focus, 
+						&.active>a:hover {
+							background-color: transparent;
+							color: $blue-1; 
+						}
+
 						> a {
 							font-weight: bold;
 							position: relative;
@@ -85,7 +103,18 @@
 								&:hover,
 								&:focus {
 									background-color: $blue-1;
+									text-decoration: none;
 								}
+
+								@include mobile {
+									display: none;
+								}
+							}
+
+							&:hover,
+							&:focus {
+								color: $blue-1;
+								text-decoration: none;
 							}
 						}
 					}
@@ -98,6 +127,7 @@
 				right: 0;
 				top: 15px;
 				display: block;
+				cursor: pointer;
 			}
 		}
 	} 

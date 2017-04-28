@@ -14,6 +14,6 @@ The Search Loop
     </article>
 <?php endwhile; else: ?>
     <div class="alert alert-warning">
-        <i class="glyphicon glyphicon-exclamation-sign"></i> <?php _e('Sorry, your search yielded no results.', 'bst'); ?>
+        <i class="glyphicon glyphicon-exclamation-sign"></i> <?php _e('No hay resultados con ese criterio de búsqueda.', 'bst'); ?>
     </div>
 <?php endif; ?>

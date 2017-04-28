@@ -89,6 +89,32 @@ body {
 		display: none;
 	}
 
+	a:focus, a:hover {
+	    color: $blue-1;
+	    text-decoration: none;
+	}
+
+	.def-header {
+		width: 391px;
+		height: 91px;
+		background-image: url('../img/bg-title.png');
+		background-repeat: no-repeat;
+		h2, h3 {
+			color: $gray-5;
+			text-align: left;
+			text-transform: uppercase;
+			padding: 1em;
+			font-size: 2em;
+			@include mobile{
+				font-size: 1.5em;
+			}
+		}
+
+		@include mobile{
+			width: 267px;
+		}
+	}
+
 	//No gutter
 	.no-gutter{
 		> [class*='col-'] {

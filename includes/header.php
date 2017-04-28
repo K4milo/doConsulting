@@ -50,7 +50,7 @@
       <ul class="social-header">
         <li><a href="https://www.facebook.com/doconsultingcolombia/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         <li><a href="https://twitter.com/DoConsulting1" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.youtube.com/embed/3jAICtsAVcQ?ecver=2" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCB-fHFZGJMv-nD5UvS7GPRg" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
         <li><a href="https://www.flickr.com/photos/doconsultingco/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
       </ul>
 

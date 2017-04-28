@@ -9,7 +9,7 @@
 			<div class="container">
 				<?php while(have_posts()): the_post(); ?>
 				<div class="content">
-					<header>
+					<header class="def-header">
 						<h2><?php the_title(); ?></h2>
 					</header>
 					<?php the_content(); ?>

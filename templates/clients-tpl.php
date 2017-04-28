@@ -9,7 +9,7 @@
 			<div class="container">
 				<?php while(have_posts()): the_post(); ?>
 				<div class="content">
-					<header>
+					<header class="def-header">
 						<h2><?php the_title(); ?></h2>
 					</header>
 					<?php the_content(); ?>
@@ -19,7 +19,7 @@
 		</div>
 		<div class="row events">
 			<div class="container">
-				<header>
+				<header class="def-header">
 					<h2>Eventos</h2>
 				</header>
 				<?php get_template_part('includes/loops/last-three-posts'); ?>

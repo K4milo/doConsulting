@@ -3,6 +3,7 @@
 		
 		$args = array(
 			'posts_per_page' => -1,
+			'post_type' => 'evento'
 		);
 
 		query_posts($args);
@@ -19,7 +20,6 @@
 						<h3><?php the_title(); ?></h3>
 					</a>
 				</header>
-				<div class="overlay"><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>" class="link-info">Ver Más</a></div>
 			</div>
 		</article>
 

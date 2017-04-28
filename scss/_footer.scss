@@ -1,6 +1,6 @@
 .site-footer {
 	margin: 0 auto;
-	padding: 2em;
+	padding-top: 2em;
 	background-color: $gray-4;
 	color: $gray;
 	.col-md-4 {
@@ -27,7 +27,7 @@
 				i {
 					color: $blue-1;
 					font-size: 2em;
-					margin-left: 1em;
+					margin-right: 1em;
 				}
 				a {
 					color: $gray;
@@ -57,6 +57,16 @@
 				border-radius: 0;
 				height: 100px; 
 			}
+		}
+	}
+
+	.copyright {
+		background-color: $gray-5;
+		padding: .4em 0 0 0;
+		img {
+			max-width: 100%;
+			display: block;
+			margin: .5em auto;
 		}
 	}
 }

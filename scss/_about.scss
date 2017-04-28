@@ -15,7 +15,7 @@ body {
 			} 
 			.content {
 				width: 80%;
-	    		margin-left: 20%;
+	    		margin-left: 3em 20% 0;
 				p{
 					text-align: right;
 				}
@@ -51,8 +51,12 @@ body {
 						figure{
 							display: block;
 							background-color: $gray-4;
-							min-height: 230px;
+							height: 230px;
+							overflow: hidden;
 							width: 100%;
+							img {
+								width: 100%
+							}
 						}
 						h2 {
 							color: $blue-1;

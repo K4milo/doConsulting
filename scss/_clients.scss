@@ -4,10 +4,29 @@
  ______________________________________*/
 body{
 	&.page-template-clients-tpl{
-		.main {
-			h2 {
-				padding: 1em 0;
+
+		.carousel {
+			.slick-prev, 
+			.slick-next {
+				width: 35px;
+				height: 65px;
+				&::before {
+					display: none;				}
 			}
+			
+			.slick-prev {
+				background-image: url('../img/back.png');
+				left: -40px;
+			}
+
+			.slick-next {
+				background-image: url('../img/next.png');
+				right: -40px;
+			}
+
+		}
+
+		.main {
 
 			p {
 				text-align: center;
@@ -25,6 +44,10 @@ body{
 		}
 
 		.events {
+			border-top: 3px solid $blue-1;
+			h2 {
+				margin-top: 0;
+			}
 			article {
 				position: relative;
 				padding: 0;
@@ -52,6 +75,7 @@ body{
 					a {
 						h3{
 							color: $white;
+							padding-top: 2.5em;
 						}
 					}
 					
