@@ -18,7 +18,9 @@
 	</div>
 	
 	<div class="list-services">
-		<?php get_template_part('includes/loops/services');?>
+		<div class="container">
+			<?php get_template_part('includes/loops/services');?>
+		</div>
 	</div>
 
 

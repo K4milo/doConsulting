@@ -40,12 +40,13 @@
 	?>
 	
 	<div id="menu<?php echo $counter; ?>" class="tab-pane fade">
-      <h3><?php the_title(); ?></h3>
+      
       <div class="col-md-7 content-tab">
+      	<h3><?php the_title(); ?></h3>
       	<?php the_content();?>
       </div>
-      <div class="col-md-5 image-tab">
-      	<?php echo types_render_field('imagen-lateral'); ?>
+      <div class="col-md-5 image-tab image-<?php echo $counter; ?>">
+      	<figure><?php echo types_render_field('imagen-lateral'); ?></figure>
       </div>
     </div>	
 	

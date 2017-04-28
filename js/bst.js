@@ -17,6 +17,10 @@
 		//SLIDER
 		$('.slide-listing').bxSlider({});
 
+		//tabs
+		$('.nav-pills > li').first().addClass('active');
+		$('#menu0').addClass('active in');
+
 		$('.carousel').slick({
 		  dots: true,
 		  infinite: true,

@@ -2832,20 +2832,62 @@ body.page-template-about-tpl .container-fluid {
 body.page-template-services-tpl .main-services .content, body.single-servicio .main-services .content {
   padding: 2em 0; }
 
-body.page-template-services-tpl .service-item, body.single-servicio .service-item {
-  position: relative;
-  margin: 1em auto;
-  max-width: 700px;
-  color: #ffffff;
-  padding-bottom: 4em; }
-  body.page-template-services-tpl .service-item header h2, body.single-servicio .service-item header h2 {
-    color: #ffffff;
-    font-size: 4em;
-    margin: 1em auto;
-    text-align: center; }
+body.page-template-services-tpl .list-services .nav.nav-pills, body.single-servicio .list-services .nav.nav-pills {
+  text-align: center; }
+  body.page-template-services-tpl .list-services .nav.nav-pills li, body.single-servicio .list-services .nav.nav-pills li {
+    float: none;
+    display: inline-block;
+    margin: 5px; }
+    body.page-template-services-tpl .list-services .nav.nav-pills li a, body.single-servicio .list-services .nav.nav-pills li a {
+      border-radius: 0;
+      padding: 1em 1.5em;
+      border: 1px solid #0F7282;
+      color: #555656;
+      font-weight: bold; }
+      body.page-template-services-tpl .list-services .nav.nav-pills li a:focus, body.page-template-services-tpl .list-services .nav.nav-pills li a:hover, body.single-servicio .list-services .nav.nav-pills li a:focus, body.single-servicio .list-services .nav.nav-pills li a:hover {
+        color: white;
+        background-color: #0F7282; }
+    body.page-template-services-tpl .list-services .nav.nav-pills li.active a, body.single-servicio .list-services .nav.nav-pills li.active a {
+      color: white;
+      background-color: #0F7282; }
+
+body.page-template-services-tpl .list-services .tab-pane, body.single-servicio .list-services .tab-pane {
+  min-height: 813px; }
+  @media (max-width: 768px) {
+    body.page-template-services-tpl .list-services .tab-pane, body.single-servicio .list-services .tab-pane {
+      min-height: auto; } }
+  body.page-template-services-tpl .list-services .tab-pane .content-tab, body.single-servicio .list-services .tab-pane .content-tab {
+    padding: 4em;
+    color: #5d5d5d; }
+    body.page-template-services-tpl .list-services .tab-pane .content-tab h3, body.single-servicio .list-services .tab-pane .content-tab h3 {
+      color: #018EAA;
+      margin: 2em 0; }
+    body.page-template-services-tpl .list-services .tab-pane .content-tab p, body.page-template-services-tpl .list-services .tab-pane .content-tab ul li, body.single-servicio .list-services .tab-pane .content-tab p, body.single-servicio .list-services .tab-pane .content-tab ul li {
+      line-height: 2;
+      font-size: 22px; }
     @media (max-width: 768px) {
-      body.page-template-services-tpl .service-item header h2, body.single-servicio .service-item header h2 {
-        font-size: 1.3em; } }
+      body.page-template-services-tpl .list-services .tab-pane .content-tab, body.single-servicio .list-services .tab-pane .content-tab {
+        padding: 1em;
+        text-align: center; } }
+  body.page-template-services-tpl .list-services .tab-pane .image-tab figure, body.single-servicio .list-services .tab-pane .image-tab figure {
+    padding: 2em 0; }
+    body.page-template-services-tpl .list-services .tab-pane .image-tab figure img, body.single-servicio .list-services .tab-pane .image-tab figure img {
+      max-width: 100%;
+      height: auto; }
+  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-0 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-0 figure img {
+    margin-left: 0; }
+  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-1 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-1 figure img {
+    margin-left: 0; }
+  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-2 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-2 figure img {
+    margin-left: -130px; }
+  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-3 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-3 figure img {
+    margin-left: -10px; }
+  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-4 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-4 figure img {
+    margin-left: -320px;
+    max-width: inherit; }
+  @media (max-width: 768px) {
+    body.page-template-services-tpl .list-services .tab-pane .image-tab, body.single-servicio .list-services .tab-pane .image-tab {
+      display: none; } }
 
 /*____________________________________
  

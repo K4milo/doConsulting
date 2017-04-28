@@ -13,24 +13,116 @@ body {
 			}
 		}
 		//text service
-		.service-item{
-			position: relative;
-			margin: 1em auto;
-			max-width: 700px;
-			color: $white;
-			padding-bottom: 4em;
-			header{
-				h2{
-					color: $white;
-					font-size: 4em;
-					margin: 1em auto;
-					text-align: center;
-					@include mobile {
-						font-size: 1.3em;
+		.list-services {
+
+			//Navigation tabs
+			.nav {
+				&.nav-pills {
+					text-align: center; 
+					li {
+						float: none;
+						display: inline-block;
+						margin: 5px;
+						a {
+							border-radius: 0;
+							padding: 1em 1.5em;
+							border: 1px solid $blue-3;
+							color: $gray-5;
+							font-weight: bold;
+							&:focus,
+							&:hover {
+								color: white;
+								background-color: $blue-3;
+							}
+						}
+						&.active {
+							a {
+								color: white;
+								background-color: $blue-3;
+							}
+						}
+					}
+				}
+			}
+
+			// tab contents
+			.tab-pane {
+				min-height: 813px;
+				@include mobile{
+					min-height: auto;
+				}
+				.content-tab {
+					padding:4em;
+					color: $gray-2;
+					h3 {
+						color: $blue-1;
+						margin: 2em 0;
+					}
+					p, ul li {
+						line-height: 2;
+						font-size: 22px;
+					}
+					@include mobile{
+						padding: 1em;
+						text-align: center;
+					}
+
+				}
+
+				.image-tab {
+					figure{
+						padding: 2em 0;
+						img{
+							max-width: 100%;
+							height: auto;
+						}
+					}
+					&.image-0 {
+						figure {
+							img{
+								margin-left: 0;
+							}
+						}
+					}
+
+					&.image-1 {
+						figure {
+							img{
+								margin-left: 0;
+							}
+						}
+					}
+
+					&.image-2 {
+						figure {
+							img{
+								margin-left: -130px;
+							}
+						}
+					}
+
+					&.image-3 {
+						figure {
+							img{
+								margin-left: -10px;
+							}
+						}
+					}
+
+					&.image-4 {
+						figure {
+							img{
+								margin-left: -320px;
+								max-width: inherit;
+							}
+						}
+					}
+
+					@include mobile{
+						display: none;
 					}
 				}
 			}
 		}
 	}
-
 }
