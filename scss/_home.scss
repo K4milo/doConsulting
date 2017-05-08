@@ -45,8 +45,21 @@ body {
 			.featured{
 				.last-post{
 					border: 1px solid $gray;
-					min-height: 526px;
+					min-height: 508px;
 					background-color: white;
+					header{
+						a {
+							display: block;
+							position: relative;
+							text-decoration: none;
+							h3 {
+								color: $blue-1;
+								padding: 1em;
+								border-bottom: 1px solid $gray-1;
+								margin: 0;
+							}
+						}
+					}// end header
 					figure{
 						position: relative;
 						overflow: hidden;
@@ -54,19 +67,6 @@ body {
 					}
 					.caption {
 						background-color: $white;
-						header{
-							a {
-								display: block;
-								position: relative;
-								text-decoration: none;
-								h3 {
-									color: $blue-1;
-									padding: 1em;
-									border-bottom: 1px solid $gray-1;
-									margin: 0;
-								}
-							}
-						}// end header
 						p {
 							padding: 20px;
 							a {
@@ -165,6 +165,7 @@ body {
 					background-color: white;
 					padding: 2em; 
 					overflow: auto;
+					border: 1px solid $blue-1;
 					@include mobile{
 						padding: 0;
 						margin: 1em auto;
@@ -176,6 +177,7 @@ body {
 						margin: 0 !important;
 						top: 0 !important;
 						left: 0 !important;
+						border: 1px solid $blue-1;
 						@include mobile{
 							padding: 0;
 							position: relative !important;
@@ -214,6 +216,7 @@ body {
 					padding: 2em;
 					background-color: white;
 					padding: 2em;
+					border: 1px solid $blue-1;
 				}
 			}
 		}//end bottom

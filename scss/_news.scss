@@ -27,6 +27,12 @@ body {
 						padding-bottom: 1em;
 						margin-bottom: 2em;
 						border-bottom: 5px solid $blue-1;
+						header {
+							padding: 1em 0;
+							h3 {
+								color: $blue-1;
+							}
+						}
 						.thumbs{
 							max-height: 400px;
 							overflow: hidden;

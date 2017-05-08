@@ -99,12 +99,14 @@ body {
 		height: 91px;
 		background-image: url('../img/bg-title.png');
 		background-repeat: no-repeat;
+		margin-bottom: 1.3em;
 		h2, h3 {
 			color: $gray-5;
 			text-align: left;
 			text-transform: uppercase;
 			padding: 1em;
 			font-size: 2em;
+			margin: 0;
 			@include mobile{
 				font-size: 1.5em;
 			}

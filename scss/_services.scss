@@ -47,16 +47,18 @@ body {
 
 			// tab contents
 			.tab-pane {
-				min-height: 813px;
+				min-height: 313px;
 				@include mobile{
 					min-height: auto;
 				}
 				.content-tab {
-					padding:4em;
+					padding:8em 1em 0;
 					color: $gray-2;
 					h3 {
 						color: $blue-1;
-						margin: 2em 0;
+						margin: 2em 0 1em -1em;
+						font-size: 2.6em;
+						text-transform: uppercase;
 					}
 					p, ul li {
 						line-height: 2;
@@ -65,56 +67,19 @@ body {
 					@include mobile{
 						padding: 1em;
 						text-align: center;
+						h3{
+							margin: 1em auto;
+							font-size: 2em;
+						}
 					}
 
 				}
-
 				.image-tab {
 					figure{
 						padding: 2em 0;
 						img{
 							max-width: 100%;
 							height: auto;
-						}
-					}
-					&.image-0 {
-						figure {
-							img{
-								margin-left: 0;
-							}
-						}
-					}
-
-					&.image-1 {
-						figure {
-							img{
-								margin-left: 0;
-							}
-						}
-					}
-
-					&.image-2 {
-						figure {
-							img{
-								margin-left: -130px;
-							}
-						}
-					}
-
-					&.image-3 {
-						figure {
-							img{
-								margin-left: -10px;
-							}
-						}
-					}
-
-					&.image-4 {
-						figure {
-							img{
-								margin-left: -320px;
-								max-width: inherit;
-							}
 						}
 					}
 

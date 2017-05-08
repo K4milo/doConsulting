@@ -50,12 +50,19 @@
 
 				&[type="submit"] {
 					margin-top: 1.4em;
+					background-color: $blue-1;
 				}
 			}
 			textarea {
 				background-color: $gray;
 				border-radius: 0;
 				height: 100px; 
+			}
+		}
+		@include mobile {
+			display: none;
+			&:first-child {
+				display: block;
 			}
 		}
 	}

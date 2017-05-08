@@ -9,21 +9,21 @@
 ?>
 	
 	<article class="news item" id="post_<?php the_ID()?>">
+		<header>
+			<a href="<?php the_permalink(); ?>">
+				<h3><?php the_title(); ?></h3>
+			</a>
+		</header>	
 		<figure class="thumbs">
 			<?php the_post_thumbnail('large'); ?>
 		</figure>
 		<div class="caption">
-			<header>
-				<a href="<?php the_permalink(); ?>">
-					<h3><?php the_title(); ?></h3>
-				</a>
-			</header>
 			<?php the_excerpt(); ?>
 			<a href="<?php the_permalink(); ?>" class="link-info">Leer Más</a>
 		</div>
 	</article>
 
 <?php
-	endwhile;
+	endwhile; 
 	wp_reset_query();
 ?>

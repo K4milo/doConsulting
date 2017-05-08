@@ -2366,13 +2366,15 @@ body {
     width: 391px;
     height: 91px;
     background-image: url("../img/bg-title.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-bottom: 1.3em; }
     body .def-header h2, body .def-header h3 {
       color: #555656;
       text-align: left;
       text-transform: uppercase;
       padding: 1em;
-      font-size: 2em; }
+      font-size: 2em;
+      margin: 0; }
       @media (max-width: 768px) {
         body .def-header h2, body .def-header h3 {
           font-size: 1.5em; } }
@@ -2581,23 +2583,23 @@ body.page-template-home-tpl .featured-news {
     height: auto; }
   body.page-template-home-tpl .featured-news .featured .last-post {
     border: 1px solid #BCBEC0;
-    min-height: 526px;
+    min-height: 508px;
     background-color: white; }
+    body.page-template-home-tpl .featured-news .featured .last-post header a {
+      display: block;
+      position: relative;
+      text-decoration: none; }
+      body.page-template-home-tpl .featured-news .featured .last-post header a h3 {
+        color: #018EAA;
+        padding: 1em;
+        border-bottom: 1px solid #E6E7E8;
+        margin: 0; }
     body.page-template-home-tpl .featured-news .featured .last-post figure {
       position: relative;
       overflow: hidden;
       height: 215px; }
     body.page-template-home-tpl .featured-news .featured .last-post .caption {
       background-color: #ffffff; }
-      body.page-template-home-tpl .featured-news .featured .last-post .caption header a {
-        display: block;
-        position: relative;
-        text-decoration: none; }
-        body.page-template-home-tpl .featured-news .featured .last-post .caption header a h3 {
-          color: #018EAA;
-          padding: 1em;
-          border-bottom: 1px solid #E6E7E8;
-          margin: 0; }
       body.page-template-home-tpl .featured-news .featured .last-post .caption p {
         padding: 20px; }
         body.page-template-home-tpl .featured-news .featured .last-post .caption p a {
@@ -2672,7 +2674,8 @@ body.page-template-home-tpl .top-networks {
       padding: 2em;
       background-color: white;
       padding: 2em;
-      overflow: auto; }
+      overflow: auto;
+      border: 1px solid #018EAA; }
       @media (max-width: 768px) {
         body.page-template-home-tpl .top-networks .col-md-8 .fb_iframe_widget,
         body.page-template-home-tpl .top-networks .col-md-8 iframe,
@@ -2689,7 +2692,8 @@ body.page-template-home-tpl .top-networks {
         height: 100% !important;
         margin: 0 !important;
         top: 0 !important;
-        left: 0 !important; }
+        left: 0 !important;
+        border: 1px solid #018EAA; }
         @media (max-width: 768px) {
           body.page-template-home-tpl .top-networks .col-md-8 .fb_iframe_widget span,
           body.page-template-home-tpl .top-networks .col-md-8 iframe span,
@@ -2732,7 +2736,8 @@ body.page-template-home-tpl .bottom-networks {
       height: 400px !important;
       padding: 2em;
       background-color: white;
-      padding: 2em; }
+      padding: 2em;
+      border: 1px solid #018EAA; }
 
 body.page-template-home-tpl .home-services {
   text-align: center; }
@@ -2787,7 +2792,7 @@ body.page-template-about-tpl .blue-bg {
       text-align: right; }
 
 body.page-template-about-tpl .container-fluid {
-  padding: 2em 15px 3em;
+  padding: 0 15px 3em;
   background-image: url(../img/bg-3.jpg);
   background-size: cover;
   background-attachment: fixed; }
@@ -2852,39 +2857,33 @@ body.page-template-services-tpl .list-services .nav.nav-pills, body.single-servi
       background-color: #0F7282; }
 
 body.page-template-services-tpl .list-services .tab-pane, body.single-servicio .list-services .tab-pane {
-  min-height: 813px; }
+  min-height: 313px; }
   @media (max-width: 768px) {
     body.page-template-services-tpl .list-services .tab-pane, body.single-servicio .list-services .tab-pane {
       min-height: auto; } }
   body.page-template-services-tpl .list-services .tab-pane .content-tab, body.single-servicio .list-services .tab-pane .content-tab {
-    padding: 4em;
+    padding: 8em 1em 0;
     color: #5d5d5d; }
     body.page-template-services-tpl .list-services .tab-pane .content-tab h3, body.single-servicio .list-services .tab-pane .content-tab h3 {
       color: #018EAA;
-      margin: 2em 0; }
+      margin: 2em 0 1em -1em;
+      font-size: 2.6em;
+      text-transform: uppercase; }
     body.page-template-services-tpl .list-services .tab-pane .content-tab p, body.page-template-services-tpl .list-services .tab-pane .content-tab ul li, body.single-servicio .list-services .tab-pane .content-tab p, body.single-servicio .list-services .tab-pane .content-tab ul li {
       line-height: 2;
       font-size: 22px; }
     @media (max-width: 768px) {
       body.page-template-services-tpl .list-services .tab-pane .content-tab, body.single-servicio .list-services .tab-pane .content-tab {
         padding: 1em;
-        text-align: center; } }
+        text-align: center; }
+        body.page-template-services-tpl .list-services .tab-pane .content-tab h3, body.single-servicio .list-services .tab-pane .content-tab h3 {
+          margin: 1em auto;
+          font-size: 2em; } }
   body.page-template-services-tpl .list-services .tab-pane .image-tab figure, body.single-servicio .list-services .tab-pane .image-tab figure {
     padding: 2em 0; }
     body.page-template-services-tpl .list-services .tab-pane .image-tab figure img, body.single-servicio .list-services .tab-pane .image-tab figure img {
       max-width: 100%;
       height: auto; }
-  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-0 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-0 figure img {
-    margin-left: 0; }
-  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-1 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-1 figure img {
-    margin-left: 0; }
-  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-2 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-2 figure img {
-    margin-left: -130px; }
-  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-3 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-3 figure img {
-    margin-left: -10px; }
-  body.page-template-services-tpl .list-services .tab-pane .image-tab.image-4 figure img, body.single-servicio .list-services .tab-pane .image-tab.image-4 figure img {
-    margin-left: -320px;
-    max-width: inherit; }
   @media (max-width: 768px) {
     body.page-template-services-tpl .list-services .tab-pane .image-tab, body.single-servicio .list-services .tab-pane .image-tab {
       display: none; } }
@@ -2944,7 +2943,7 @@ body.page-template-clients-tpl .events {
       background-color: rgba(0, 0, 0, 0.8);
       text-align: center;
       color: #ffffff; }
-      body.page-template-clients-tpl .events article .caption a h3 {
+      body.page-template-clients-tpl .events article .caption h3 {
         color: #ffffff;
         padding-top: 2.5em; }
       body.page-template-clients-tpl .events article .caption p {
@@ -2975,6 +2974,10 @@ body.page-template-news-tpl .list-news .feed-news article.news {
   padding-bottom: 1em;
   margin-bottom: 2em;
   border-bottom: 5px solid #018EAA; }
+  body.page-template-news-tpl .list-news .feed-news article.news header {
+    padding: 1em 0; }
+    body.page-template-news-tpl .list-news .feed-news article.news header h3 {
+      color: #018EAA; }
   body.page-template-news-tpl .list-news .feed-news article.news .thumbs {
     max-height: 400px;
     overflow: hidden; }
@@ -3051,11 +3054,17 @@ body.page.page-id-61 .col-md-6 form .form-control {
     margin-bottom: .5em;
     display: block; }
   .site-footer .col-md-4 form input[type="submit"] {
-    margin-top: 1.4em; }
+    margin-top: 1.4em;
+    background-color: #018EAA; }
   .site-footer .col-md-4 form textarea {
     background-color: #BCBEC0;
     border-radius: 0;
     height: 100px; }
+  @media (max-width: 768px) {
+    .site-footer .col-md-4 {
+      display: none; }
+      .site-footer .col-md-4:first-child {
+        display: block; } }
   .site-footer .copyright {
     background-color: #555656;
     padding: .4em 0 0 0; }
