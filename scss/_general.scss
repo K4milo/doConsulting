@@ -104,9 +104,9 @@ body {
 			color: $gray-5;
 			text-align: left;
 			text-transform: uppercase;
-			padding: 1em;
+			padding: 0.2em 1em;
 			font-size: 2em;
-			margin: 0;
+			margin: 1em 0;
 			@include mobile{
 				font-size: 1.5em;
 			}

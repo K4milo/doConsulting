@@ -5,11 +5,19 @@
 body {
 	&.page-template-home-tpl{
 		//---- Slider
+		.bx-wrapper{
+			height: 450px;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 1170px !important;
+		}
 		.slide-listing {
 			padding: 0;
+			margin: 0 auto;
 			li {
 				display: block;
-				height: 600px;
+				height: 450px;
+				margin: 0 auto;
 				background-size: cover;
 				background-position: top center;
 				//caption

@@ -15,7 +15,7 @@
 			<?php the_post_thumbnail('medium'); ?>
 		</figure>
 		<div class="caption">
-			<a href="<?php the_permalink(); ?>">
+			<a href="/do/servicios">
 				<h3><?php the_title(); ?></h3>
 			</a>
 			<?php the_excerpt(); ?>

@@ -2372,9 +2372,9 @@ body {
       color: #555656;
       text-align: left;
       text-transform: uppercase;
-      padding: 1em;
+      padding: 0.2em 1em;
       font-size: 2em;
-      margin: 0; }
+      margin: 1em 0; }
       @media (max-width: 768px) {
         body .def-header h2, body .def-header h3 {
           font-size: 1.5em; } }
@@ -2551,11 +2551,19 @@ body {
  
  HOME
  ______________________________________*/
+body.page-template-home-tpl .bx-wrapper {
+  height: 450px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px !important; }
+
 body.page-template-home-tpl .slide-listing {
-  padding: 0; }
+  padding: 0;
+  margin: 0 auto; }
   body.page-template-home-tpl .slide-listing li {
     display: block;
-    height: 600px;
+    height: 450px;
+    margin: 0 auto;
     background-size: cover;
     background-position: top center; }
     body.page-template-home-tpl .slide-listing li .caption {
