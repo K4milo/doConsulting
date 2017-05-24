@@ -23,7 +23,7 @@
 		<div class="container">
 			<div class="col-md-8 yt">
 				<span class="circle-icon"> <i class="fa fa-youtube-play" aria-hidden="true"></i> </span>
-				<iframe src="https://www.youtube.com/embed/3jAICtsAVcQ?ecver=2" width="100%" frameborder="0"  allowfullscreen></iframe>
+				<?php echo types_render_field('iframe-youtube');?>
 			</div>
 			<div class="col-md-4 fb">
 				<span class="circle-icon"> <i class="fa fa-facebook" aria-hidden="true"></i> </span>
@@ -42,7 +42,7 @@
 
 			<div class="col-md-8 fl">
 				<span class="circle-icon"><i class="fa fa-flickr" aria-hidden="true"></i></span>
-				<a data-flickr-embed="true" data-header="true" data-footer="true"  href="https://www.flickr.com/photos/doconsultingco/34036493711/" title="L&#x27;Oréal Colombia - Cartagena 1"><img src="https://c1.staticflickr.com/3/2906/34036493711_058c8b9575_z.jpg" width="100%" height="480" alt="L&#x27;Oréal Colombia - Cartagena 1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<?php echo types_render_field('iframe-flickr');?>
 
 			</div>
 		</div>

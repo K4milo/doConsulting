@@ -42,6 +42,20 @@ body {
 				}//caption
 			}//list item
 		}// end slider
+		
+		.slides-desktop{
+			display: block;
+			@include mobile {
+				display: none;
+			}				
+		}
+
+		.slides-mobile{
+			display: none;
+			@include mobile {
+				display: block;
+			}
+		}
 		//Feed News
 		.featured-news{
 			background-color: $gray-3;
